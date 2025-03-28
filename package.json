@@ -1,0 +1,75 @@
+{
+    "name": "transform-fs-promises-webpack-plugin",
+    "version": "0.1.0",
+    "private": false,
+    "description": "A webpack plugin to transform fs promises APIs for compatible with lower Node.js versions.",
+    "sideEffects": false,
+    "files": [
+        "dist"
+    ],
+    "type": "commonjs",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.mjs",
+    "exports": {
+        "./package.json": {
+            "import": "./package.json",
+            "require": "./package.json"
+        },
+        ".": {
+            "require": {
+                "default": "./dist/cjs/index.js",
+                "types": "./dist/cjs/index.d.ts"
+            },
+            "import": {
+                "default": "./dist/esm/index.mjs",
+                "types": "./dist/esm/index.d.ts"
+            }
+        }
+    },
+    "scripts": {
+        "test": "node --import tsx --test **/*.test.ts **/**/*.test.ts",
+        "test:update-snapshot": "node --import tsx --test-update-snapshots --test **/*.test.ts **/**/*.test.ts ",
+        "build": "rslib build",
+        "prepack": "npm run build"
+    },
+    "author": "Axetroy <axetroy.dev@gmail.com>",
+    "license": "SEE LICENSE IN LICENSE",
+    "devDependencies": {
+        "@babel/code-frame": "^7.26.2",
+        "@rslib/core": "^0.5.4",
+        "@types/babel__code-frame": "^7.0.6",
+        "@types/babel__core": "^7.20.5",
+        "@types/node": "^22.10.2",
+        "memfs": "^4.17.0",
+        "memfs3": "npm:memfs@3",
+        "outdent": "^0.8.0",
+        "prettier": "^3.5.3",
+        "tsx": "^4.19.2",
+        "typescript": "^5.7.2",
+        "unionfs": "^4.5.4",
+        "unionfs2": "npm:unionfs@2",
+        "webpack": "^5.98.0",
+        "webpack4": "npm:webpack@4"
+    },
+    "keywords": [
+        "webpack",
+        "plugin",
+        "transform",
+        "fs-promises"
+    ],
+    "homepage": "https://github.com/axetroy/transform-fs-promises-webpack-plugin#readme",
+    "bugs": {
+        "url": "https://github.com/axetroy/transform-fs-promises-webpack-plugin/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/axetroy/transform-fs-promises-webpack-plugin.git"
+    },
+    "peerDependencies": {
+        "webpack": ">=4 || >=5"
+    },
+    "dependencies": {
+        "@babel/core": "^7.26.10",
+        "babel-plugin-transform-fs-promises": "^0.1.3"
+    }
+}
