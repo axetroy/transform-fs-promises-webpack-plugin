@@ -3,7 +3,10 @@ exports[`test cjs output 1`] = `
 > cjs@1.0.0 test
 > node index.cjs
 
-{ default: [Function: TransformFsPromisesPlugin] }
+{
+  TransformFsPromisesPlugin: [Function: TransformFsPromisesPlugin],
+  default: [Function: TransformFsPromisesPlugin]
+}
 
 `;
 
