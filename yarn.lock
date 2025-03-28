@@ -1018,10 +1018,10 @@ atob@^2.1.2:
   resolved "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-babel-plugin-transform-fs-promises@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/babel-plugin-transform-fs-promises/-/babel-plugin-transform-fs-promises-0.1.3.tgz#5def5ffe5a7edfef48a83dd57adf8843eaba15f5"
-  integrity sha512-tLDX4ssqzFjle5VdAS4502tqquoaXY0Mbj4VH2O2EMu3zRX1VoeicBH2cxiblwgxQkupAzmNy6eY/HdMfRgdUQ==
+babel-plugin-transform-fs-promises@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.npmjs.org/babel-plugin-transform-fs-promises/-/babel-plugin-transform-fs-promises-0.1.4.tgz#8d8159472ee3827a05878f4409b8ce5cfbcf5a3b"
+  integrity sha512-hVqWj+L2rmHhoDU766Hj1EQsW6+74xEQwjntEbu63R/xlFfipzfPEl0fQ0q4d2EGH+X0iOp96qHHxLBlKFrMJA==
 
 balanced-match@^1.0.0:
   version "1.0.2"
