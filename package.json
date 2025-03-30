@@ -1,6 +1,6 @@
 {
     "name": "transform-fs-promises-webpack-plugin",
-    "version": "0.1.2",
+    "version": "1.0.0",
     "private": false,
     "description": "A webpack plugin to transform fs promises APIs for compatible with lower Node.js versions.",
     "sideEffects": false,
