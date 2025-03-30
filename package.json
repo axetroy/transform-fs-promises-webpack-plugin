@@ -66,7 +66,7 @@
         "webpack": "^4.0.0 || ^5.0.0"
     },
     "dependencies": {
-        "@babel/core": "^7.26.10",
-        "babel-plugin-transform-fs-promises": "^0.1.4"
+        "babel-plugin-transform-fs-promises": "^1.0.2",
+        "babel-transform-webpack-plugin": "^1.0.1"
     }
 }
